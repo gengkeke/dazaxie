@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta content="width=device-width, initial-scale=1" name="viewport">
+        <title>福岁乐-联系我们</title>
+        <link rel="stylesheet" href="css/bootstrap-reboot.css">
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/style.css">
+        <script src="js/jquery-3.4.1.min.js"></script>
+        <script src="js/popper.min.js"></script>
+        <script src="js/bootstrap.js"></script>
+        <style type="text/css">
+            .iw_poi_title {color:#CC5522;font-size:14px;font-weight:bold;overflow:hidden;padding-right:13px;white-space:nowrap}
+            .iw_poi_content {font:12px arial,sans-serif;overflow:visible;padding-top:4px;white-space:-moz-pre-wrap;word-wrap:break-word}
+        </style>
+        <script type="text/javascript" src="http://api.map.baidu.com/api?key=&v=1.1&services=true"></script>
+    </head>
+    <body>
+        <!--header-->
+        <header>
+            <div class="container header_top">
+                <div class="logo">
+                    <a href="index.html"><img src="images/logo.png" width="190"></a>
+                    <h5>一家专业做全产业链的大闸蟹平台</h5>
+                </div>
+                <div class="logo ml-1">
+                    <img src="images/hearder_title.png" height="50">
+                </div>
+            </div>
+        </header>
+        <!--nav-->
+        <div class="header-nav">
+            <nav class="navbar navbar-expand-lg navbar-dark container " style="z-index: 999">
+                <button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
+                        class="navbar-toggler" data-target="#navbarSupportedContent"
+                        data-toggle="collapse" type="button">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav w-100 nav-justified">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">福岁乐首页</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">品牌故事</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="list-shop-lh.html">大闸蟹礼盒</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="list-shop-lpk.html">大闸蟹礼品卡</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="list-article.html">大闸蟹资讯</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="contact.html">联系我们</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <!--中间内容区域-->
+        <div class="container text-center contact mt-3 mb-3">
+            <div class="contact-l border-right">
+                <div class="contact-l-title mb-3">
+                    <img src="images/Store.png" width="50%">
+                </div>
+                <div class="contact-l-body">
+                    <ul>
+                        <li class="active border-top"><a href="#">上海杨浦店</a></li>
+                        <li><a href="#">上海杨浦店</a></li>
+                        <li><a href="#">上海杨浦店</a></li>
+                        <li><a href="#">上海杨浦店</a></li>
+                        <li><a href="#">上海杨浦店</a></li>
+                        <li><a href="#">上海杨浦店</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="contact-r">
+                <div class="contact-r-title border-bottom pb-3">
+                    <img src="images/md.jpg" width="300">
+                    <div class="contact-r-title-info">
+                        <h2>上海杨浦店</h2>
+                        <b>上海市杨浦区民星路270号</b>
+                        <div class="phone">400-000-0000</div>
+                    </div>
+                </div>
+                <div class="text-left border-bottom">
+                    <h4>公交线路</h4>
+                </div>
+                <div class="line">
+                    <p>地铁出行: </p>
+                    <p>5号线和平里北街站A2口出 步行800米</p>
+                    <p>  公交出行:</p>
+                    <p>   小黄庄站：75路、119路、123路 步行10米</p>
+                    <p>   驾车出行:</p>
+                    <p>  安定门内大街-东城店：行驶870米直行进入安定门桥，行驶150米直行进入安定门外大街，行驶1.3公里右转进入安定门外大街辅路，行驶90米右转进入青年沟路，行驶130米到达</p>
+                    <p>  安定门桥-东城店：行驶90米直行进入安定门东大街，行驶10米，进入安定门桥靠右前方行驶230米，直行进入安定门外大街，行驶1.3公里右转进入安定门外大街铺路，行驶90米右转进入青年沟路，行驶130米到达</p>
+                    </p>
+                </div>
+                <div class="map">
+                    <!--百度地图容器-->
+                    <div style="width:100%;height:500px;border:#ccc solid 1px;" id="dituContent"></div>
+                </div>
+            </div>
+
+        </div>
+
+        <!--底部-->
+        <footer class="jumbotron jumbotron-fluid text-center text-white-50 m-0 p-0">
+            <div class="footer-pic"></div>
+            <div class="container">
+            <div></div>
+            </div>
+            <div class="container  text-center mb-3">
+                <a href="#">关于我们</a> | <a href="#">资质认证</a> | <a href="#">加入我们</a> |
+                <a href="#">联系我们</a> | <a href="#">网站地图</a> | <a href="#">站长统计</a>
+            </div>
+            <div class="container  text-center mb-2">
+            © 2019-2020 福岁乐大闸蟹 版权所有，并保留所有权利。 ICP备案证书号:沪ICP备00000000号-0
+            </div>
+            <div class="container  text-center mb-2">
+                福岁乐大闸蟹有限公司 全国免费热线: 400-000-0000
+            </div>
+            <div class="container  text-center mb-4">
+                <img src="images/baojing.gif">
+                <img src="images/beian.gif">
+                <img src="images/jubao.gif">
+                <img src="images/jubao2.gif">
+            </div>
+            <div class="container  text-center pb-3">
+                友情链接： <a href="#">阳澄湖大闸蟹</a> | <a href="#">上海大闸蟹</a> | <a href="#">上海大闸蟹</a> |
+                <a href="#">上海大闸蟹</a> | <a href="#">上海大闸蟹</a> | <a href="#">上海大闸蟹</a> |
+                <a href="#">上海大闸蟹</a> | <a href="#">上海大闸蟹</a> | <a href="#">上海大闸蟹</a>
+            </div>
+        </footer>
+    </body>
+    <script type="text/javascript">
+        //创建和初始化地图函数：
+        function initMap(){
+            createMap();//创建地图
+            setMapEvent();//设置地图事件
+            addMapControl();//向地图添加控件
+            addMarker();//向地图中添加marker
+        }
+
+        //创建地图函数：
+        function createMap(){
+            var map = new BMap.Map("dituContent");//在百度地图容器中创建一个地图
+            var point = new BMap.Point(121.548506,31.316745);//定义一个中心点坐标
+            map.centerAndZoom(point,15);//设定地图的中心点和坐标并将地图显示在地图容器中
+            window.map = map;//将map变量存储在全局
+        }
+
+        //地图事件设置函数：
+        function setMapEvent(){
+            map.enableDragging();//启用地图拖拽事件，默认启用(可不写)
+            map.enableScrollWheelZoom();//启用地图滚轮放大缩小
+            map.enableDoubleClickZoom();//启用鼠标双击放大，默认启用(可不写)
+            map.enableKeyboard();//启用键盘上下左右键移动地图
+        }
+
+        //地图控件添加函数：
+        function addMapControl(){
+            //向地图中添加缩放控件
+            var ctrl_nav = new BMap.NavigationControl({anchor:BMAP_ANCHOR_TOP_LEFT,type:BMAP_NAVIGATION_CONTROL_LARGE});
+            map.addControl(ctrl_nav);
+            //向地图中添加缩略图控件
+            var ctrl_ove = new BMap.OverviewMapControl({anchor:BMAP_ANCHOR_BOTTOM_RIGHT,isOpen:1});
+            map.addControl(ctrl_ove);
+            //向地图中添加比例尺控件
+            var ctrl_sca = new BMap.ScaleControl({anchor:BMAP_ANCHOR_BOTTOM_LEFT});
+            map.addControl(ctrl_sca);
+        }
+
+        //标注点数组
+        var markerArr = [{title:"福岁乐",content:"福岁乐",point:"121.545667|31.320324",isOpen:1,icon:{w:21,h:21,l:0,t:0,x:6,lb:5}}
+        ];
+        //创建marker
+        function addMarker(){
+            for(var i=0;i<markerArr.length;i++){
+                var json = markerArr[i];
+                var p0 = json.point.split("|")[0];
+                var p1 = json.point.split("|")[1];
+                var point = new BMap.Point(p0,p1);
+                var iconImg = createIcon(json.icon);
+                var marker = new BMap.Marker(point,{icon:iconImg});
+                var iw = createInfoWindow(i);
+                var label = new BMap.Label(json.title,{"offset":new BMap.Size(json.icon.lb-json.icon.x+10,-20)});
+                marker.setLabel(label);
+                map.addOverlay(marker);
+                label.setStyle({
+                    borderColor:"#808080",
+                    color:"#333",
+                    cursor:"pointer"
+                });
+
+                (function(){
+                    var index = i;
+                    var _iw = createInfoWindow(i);
+                    var _marker = marker;
+                    _marker.addEventListener("click",function(){
+                        this.openInfoWindow(_iw);
+                    });
+                    _iw.addEventListener("open",function(){
+                        _marker.getLabel().hide();
+                    })
+                    _iw.addEventListener("close",function(){
+                        _marker.getLabel().show();
+                    })
+                    label.addEventListener("click",function(){
+                        _marker.openInfoWindow(_iw);
+                    })
+                    if(!!json.isOpen){
+                        label.hide();
+                        _marker.openInfoWindow(_iw);
+                    }
+                })()
+            }
+        }
+        //创建InfoWindow
+        function createInfoWindow(i){
+            var json = markerArr[i];
+            var iw = new BMap.InfoWindow("<b class='iw_poi_title' title='" + json.title + "'>" + json.title + "</b><div class='iw_poi_content'>"+json.content+"</div>");
+            return iw;
+        }
+        //创建一个Icon
+        function createIcon(json){
+            var icon = new BMap.Icon("http://app.baidu.com/map/images/us_mk_icon.png", new BMap.Size(json.w,json.h),{imageOffset: new BMap.Size(-json.l,-json.t),infoWindowOffset:new BMap.Size(json.lb+5,1),offset:new BMap.Size(json.x,json.h)})
+            return icon;
+        }
+
+        initMap();//创建和初始化地图
+    </script>
+</html>
